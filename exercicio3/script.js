@@ -23,11 +23,11 @@ pokemon1.ataque.push ({
     tipo: "Normal",
     precisao: 100,
 })
-console.log ("Esse é o objeto original", pokemon1)
+console.log ("Esse é o objeto original", pokemon1.ataque)
 
 // c)
 
-copiaPokemon1.ataque = [{...pokemon1.ataque}]
+copiaPokemon1.ataque = [...pokemon1.ataque]
 console.log ("Essa é a cópia do objeto pokemon 1 \"Ataque\"", copiaPokemon1)
 
 // d)
@@ -54,4 +54,3 @@ console.log ("Aplicando o 2º ataque em Cópia Pokemon1", copiaPokemon1)
 
 console.log (pokemon1)
 console.log (copiaPokemon1)
-
