@@ -8,11 +8,11 @@ const pokemon1 = {
 
 // a)
 
-const copiaPokemon1 = {...pokemon1}
-copiaPokemon1.nome = "Squirtle"
-copiaPokemon1.tipo = "Água"
+const pokemon2 = {...pokemon1}
+pokemon2.nome = "Squirtle"
+pokemon2.tipo = "Água"
 
-console.log ("Essa é a cópia do objeto pokemon 1", copiaPokemon1)
+console.log ("Essa é a cópia do objeto pokemon 1", pokemon2)
 
 // b)
 
@@ -27,8 +27,8 @@ console.log ("Esse é o objeto original", pokemon1.ataque)
 
 // c)
 
-copiaPokemon1.ataque = [...pokemon1.ataque]
-console.log ("Essa é a cópia do objeto pokemon 1 \"Ataque\"", copiaPokemon1)
+pokemon2.ataque = [...pokemon1.ataque]
+console.log ("Essa é a cópia do objeto pokemon 1 \"Ataque\"", pokemon2)
 
 // d)
 
@@ -42,15 +42,15 @@ console.log ("Aplicando o 2º ataque em Pokemon1", pokemon1)
 
 // e)
 
-copiaPokemon1.ataque.push ({
+pokemon2.ataque.push ({
     nome: "Jato de Água",
     dano: 40,
     precisao: 100,
     tipo: "Água",
 })
-console.log ("Aplicando o 2º ataque em Cópia Pokemon1", copiaPokemon1)
+console.log ("Aplicando o 2º ataque em Cópia Pokemon1", pokemon2)
 
 // f)
 
 console.log (pokemon1)
-console.log (copiaPokemon1)
+console.log (pokemon2)
